@@ -70,4 +70,4 @@ source 'https://rails-assets.org' do
 end
 gem 'devise'
 gem 'simple_form'
-
+gem 'carrierwave', '~> 2.0'
