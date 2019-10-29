@@ -16,7 +16,7 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
-       <%= link_to 'allBALL.com', root_path, class: 'navbar-brand' %>
+       <%= link_to 'aLLBALL.com', root_path, class: 'navbar-brand' %>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
@@ -56,9 +56,48 @@
 
   <div id="footer"
     <div class="container">
-      <b>Coaches</b>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <b>Coaches</b>
+          <br />
+          <%= link_to 'Teach a Course', new_instructor_course_path %>
+          <br />
+          <%= link_to 'My Dashboard', dashboard_path %>
+        </div>
+        <div class="col-12 col-sm-3">
+          <b>About</b>
+          <br />
+          <%= link_to 'Team', '#' %>
+          <br />
+          <%= link_to 'Careers', '#' %>
+          <br />
+          <%= link_to 'Privacy Policy', privacy_path %>
+        </div>
+        <div class="col-12 col-sm-3">
+          <b>Contact</b>
+          <br />
+          jguest777@gmail.com
+          <br />
+          Ima Boss Way
+          <br />
+          Cocoa Beach FL, 32931
+        </div>
+        <div class="col-12 col-sm-3 social">
+          <b>Social</b>
+          <br />
+          <br />
+          <%= link_to 'https://twitter.com/James_Guest7' do %>
+            <span class="fa fa-twitter fa-2x social-button"></span>
+          <% end %>
+          <%= link_to 'https://github.com/JGuest777' do %>
+            <span class="fa fa-github fa-2x social-button"></span>
+          <% end %>
+          <%= link_to 'https://www.instagram.com/be_my_guest7/' do %>
+            <span class="fa fa-instagram fa-2x social-button"></span>
+          <% end %>
+          <br />
+        </div>
+      </div>  
     </div>
   </div>
 
