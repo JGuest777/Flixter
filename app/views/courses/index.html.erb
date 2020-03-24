@@ -5,10 +5,10 @@
   <div class="row">
     <% @courses.each do |course| %>
       <div class="col-12 col-sm-5 offset-1", style="margin-left:auto; margin-right:auto;">
-        <div class="soft-box", style="height:80%;">
+        <div class="soft-box">
           <div class="col-12 text-center">
             <h2>
-              <%= link_to course.title, course_path(course), style:"font-weight: 400;" %>
+              <%= link_to course.title, course_path(course) %>
             </h2>		
           </div>	
           <div class="row">
