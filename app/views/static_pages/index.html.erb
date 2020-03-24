@@ -1,32 +1,35 @@
-<div class="hero">
-  <br />
-  <div class="frosty col-10 offset-1 text-center">
-    <br />
+<%# Video background %>
+<header class="v-header vcontainer">
+  <div class="fullscreen-video-wrap">
+    <%= video_tag(["vid.mov"], :autoplay => true, :loop => true) %>
+  </div>
+  <div class="header-overlay"></div>
+  <div class="header-content frosty">
     <h1> If you're not getting better.. </h1>
     <br />
     <h2> You're getting worse! </h2>
     <br />
     <%= link_to 'GET BETTER!', courses_path, class: 'btn btn-success' %>
-    <br /><br />
-  </div>
-</div>
-<br />
-<div class="row feature text-center">
-  <div class="col-12 col-sm">
-    <h3 class="feature-heading">Courses</h3>
     <br />
-    <p>Choose from any number of courses to study with amazing coaches.</p>
+    <br />
   </div>
+</header>
+  <div class="row feature text-center">
+    <div class="col-12 col-sm">
+      <h3 class="feature-heading">Detailed Courses</h3>
+      <br />
+      <p>Choose from any number of courses to study with amazing coaches.</p>
+    </div>
 
-  <div class="col-12 col-sm">
-    <h3 class="feature-heading">Sign up</h3>
-     <br />
-    <p>Enroll and access a courses archive of lessons, drill tapes and more!</p>
-  </div>
+    <div class="col-12 col-sm">
+      <h3 class="feature-heading">Learn on your time!</h3>
+      <br />
+      <p>Enroll and access a courses archive of lessons, drill tapes and more!</p>
+    </div>
 
-  <div class="col-12 col-sm">
-    <h3 class="feature-heading">Community</h3>
-     <br />
-    <p>Learn with a community of like-minded coaches.</p>
+    <div class="col-12 col-sm">
+      <h3 class="feature-heading">Join the Community</h3>
+      <br />
+      <p>Learn with a community of like-minded coaches.</p>
+    </div>
   </div>
-</div>

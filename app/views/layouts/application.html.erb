@@ -43,9 +43,9 @@
             <%= link_to 'Sign up', new_user_registration_path, class: 'nav-link' %>
           </li>
         <% end %>
-      </ul>
+        </ul>
+        </nav>
       </div>
-    </nav>
 
     <% if notice.present? %>
       <p class="alert alert-info"><%= notice %></p>
@@ -57,7 +57,7 @@
     <%= yield %>
   </div>
 
-  <div id="footer"
+  <div id="footer">
     <div class="container">
       <div class="row row-mobile">
         <div class="col-12 col-sm-3">
@@ -79,7 +79,7 @@
         <div class="col-12 col-sm-3">
           <b>Contact</b>
           <br />
-          jguest777@gmail.com
+          <%= mail_to 'jguest777@gmail.com' %>
           <br />
           Cocoa Beach FL, 32931
         </div>
