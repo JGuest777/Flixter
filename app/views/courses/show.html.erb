@@ -10,11 +10,13 @@
     <div class="col-sm-4 col-12 text-center">
       <span class="badge badge-default">
         <%= number_to_currency current_course.cost %>
-      </span>
 
+      </span>
+        <br />
       <% if current_user && current_user == current_course.user %>
         <br />
         <%= link_to 'Administer', instructor_course_path(current_course), class: 'btn btn-danger btn-large' %>
+        <br />
       <% end %>
 
       <br />
@@ -33,7 +35,7 @@
                   data-description="<%= current_course.title %> (<%= number_to_currency current_course.cost %>)"
                   data-amount="<%= (current_course.cost * 100).to_i %>"
                   data-locale="auto"></script>
-        `<% end %>`
+          <% end %>
         <% end %>
       <% end %>
     <% else %>
