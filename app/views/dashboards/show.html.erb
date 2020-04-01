@@ -22,6 +22,17 @@
     <br class="clr" />
   <% end %>
 
+  <% if current_user.enrolled_courses.blank? %>
+    <br />
+      <h3 class="text-center">
+        <%= 'You are currently not learning anything!' %>
+        <br />
+        <br />
+          :(
+      </h3>
+    <br />
+  <% end %>
+
   <h1 id="dash">What I'm Teaching</h1>
     <% current_user.courses.each do |course| %>
       <h3 class="text-center">
@@ -40,4 +51,15 @@
         </div>
       </div>
     <% end %>
+
+  <% if current_user.courses.blank? %>
+    <br />
+      <h3 class="text-center">
+      <%= 'You are currently not teaching anything!' %>
+      <br />
+      <br />
+        :(
+      </h3>
+    <br />
+  <% end %>
 </div>
