@@ -4,7 +4,7 @@ A two-sided, video-streaming marketplace platform that features credit card paym
 
 <img src="images/index.PNG">
 
-<img src="images/auth.PNG" width="400"> <img src="images/courses.PNG" width="400">
+<img src="images/courses.PNG" width="400"> <img src="images/payment.PNG" width="400">
 
 ## Getting Started
 
