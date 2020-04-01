@@ -1,19 +1,17 @@
-<%# Video background %>
-<header class="v-header vcontainer">
-  <div class="fullscreen-video-wrap">
-    <%= image_tag('hero.jpg') %>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="frosty">
+      <h1> If you're not getting better.. </h1>
+      <br />
+      <h2> You're getting worse! </h2>
+      <br />
+      <%= link_to 'GET BETTER!', courses_path, class: 'btn btn-success' %>
+      <br />
+      <br />
+    </div>
   </div>
-  <div class="header-overlay"></div>
-  <div class="header-content frosty">
-    <h1> If you're not getting better.. </h1>
-    <br />
-    <h2> You're getting worse! </h2>
-    <br />
-    <%= link_to 'GET BETTER!', courses_path, class: 'btn btn-success' %>
-    <br />
-    <br />
-  </div>
-</header>
+</div>
+
   <div class="row feature text-center">
     <div class="col-12 col-sm">
       <h3 class="feature-heading">Detailed Courses</h3>

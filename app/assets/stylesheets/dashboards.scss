@@ -11,4 +11,23 @@
 	border: 1px solid #ccc;
 	padding: 10px;
 	color: whitesmoke;
+	animation: shadow-pulse2 1s infinite;
+}
+
+@keyframes shadow-pulse2 {
+	0% {
+		box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+	}
+	100% {
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+}
+
+@keyframes shadow-pulse2-big {
+	0% {
+		box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+	}
+	100% {
+		box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+	}
 }
