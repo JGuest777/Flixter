@@ -3,25 +3,35 @@
 <div class="booyah-box col-10 offset-1">
   <div class="soft-box">
     <h1 style="text-align: center"><%= current_course.title %></h1>
+    <br />
+    <div class="text-center">
       <% if current_course.image.present? %>
         <%= image_tag current_course.image.to_s, class: 'img-fluid' %>
       <% else %>
         <%= image_tag 'placeholder.jpg', class: 'img-fluid' %>
       <% end %>
+    </div>
+    <br />
+    <div class="text-center">
+    <h4>
+        <%= current_course.description %>
+    </h4>
+  </div>
+
     <br />
       
-  <div class="row">
-    <div class="col-sm-4 col-12 text-center">
+    <div class="text-center">
       <span class="badge badge-default">
-        <%= number_to_currency current_course.cost %>
-
+        <h5>
+          <%= number_to_currency current_course.cost %>
+        </h5>
       </span>
         <br />
-      <% if current_user && current_user == current_course.user %>
+        <% if current_user && current_user == current_course.user %>
         <br />
         <%= link_to 'Administer', instructor_course_path(current_course), class: 'btn btn-danger btn-large' %>
         <br />
-      <% end %>
+        <% end %>
 
       <br />
 
@@ -43,16 +53,11 @@
         <% end %>
       <% end %>
     <% else %>
-      <h3 class="badge badge-info">Sign In to Enroll!</h3>
-    <% end %>
+    <h5>
+      <%= link_to 'Sign In to Enroll!', new_user_session_path, class: 'badge badge-info' %>
+      <% end %>
+    </h5>
     </div>
-
-  <div class="col-sm-8 col-12">
-    <h4>
-        <%= current_course.description %>
-    </h4>
-  </div>
-  </div>
   </div>
 
     <div class="col-12">

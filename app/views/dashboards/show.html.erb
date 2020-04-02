@@ -2,33 +2,33 @@
 
 <div class="booyah-box col-10 offset-1">
   <h1 id="dash">What I'm Learning</h1>
-  <% current_user.enrolled_courses.each do |course| %>
-    <h3 class="text-center">
-      <%= link_to course.title, course_path(course) %>
-    </h3>
-    <br />
-       <% if course.image.present? %>
-        <%= image_tag course.image.to_s, class: 'img-fluid' %>
-      <% else %>
-        <%= image_tag 'placeholder.jpg', class: 'img-fluid' %>
-      <% end %>
-    <br />
-    <br />
-    <div class="row">
-      <div class="col-12 col-sm-8 text center">
-        <h5>
+    <% current_user.enrolled_courses.each do |course| %>
+      <div class="soft-box">
+        <h2 class="text-center">
+          "<%= course.title %>"
+        </h2>
+        <br />
+        <div class="text-center">
+          <% if course.image.present? %>
+            <%= image_tag course.image.to_s, class: 'img-fluid' %>
+          <% else %>
+            <%= image_tag 'placeholder.jpg', class: 'img-fluid' %>
+          <% end %>
+        </div>
+        <br />
+        <br />
+        <h4 class="text-center">
           <%= course.description %>
-        </h5>
+        </h4>
+        <br />
+        <div class="text-center">
+          <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
+        </div>
       </div>
-      
-      <div class="col-12 col-sm-4 text-center">
-      <br />
-        <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
-      </div>
-    </div>
-    <hr class="col-8 offset-2">
-    <br class="clr" />
-  <% end %>
+      <hr class="col-8 offset-2">
+    <% end %>
+
+        <br class="clr" />
 
   <% if current_user.enrolled_courses.blank? %>
     <br />
@@ -43,31 +43,33 @@
 
   <h1 id="dash">What I'm Teaching</h1>
     <% current_user.courses.each do |course| %>
-      <h3 class="text-center">
-        <%= link_to course.title, course_path(course) %>
-      </h3>
-      <br />
-      <% if course.image.present? %>
-        <%= image_tag course.image.to_s, class: 'img-fluid' %>
-      <% else %>
-        <%= image_tag 'placeholder.jpg', class: 'img-fluid' %>
-      <% end %>
-      <br />
-      <br />
-      <div class="row">
-        <div class="col-12 col-sm-8">
-          <h5>
-            <%= course.description %>
-          </h5>
+      <div class="soft-box">
+        <h2 class="text-center">
+          "<%= course.title %>"
+        </h2>
+        <br />
+        <div class="text-center">
+          <% if course.image.present? %>
+            <%= image_tag course.image.to_s, class: 'img-fluid' %>
+          <% else %>
+            <%= image_tag 'placeholder.jpg', class: 'img-fluid' %>
+          <% end %>
         </div>
-        <div class="col-12 col-sm-4 text-center">
+        <br />
+        <br />
+        <h4 class="text-center">
+          <%= course.description %>
+        </h4>
+        <br />  
+        <div class="text-center">
         <br />
           <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
         </div>
       </div>
       <hr class="col-8 offset-2">
-      <br class="clr" />
     <% end %>
+
+        <br class="clr" />
 
   <% if current_user.courses.blank? %>
     <br />
