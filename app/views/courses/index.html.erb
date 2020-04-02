@@ -11,7 +11,7 @@
               <%= link_to course.title, course_path(course) %>
             </h2>		
           </div>	
-          <div class="row">
+          <div class="row container-fluid">
             <% if course.image.present? %>
               <%= image_tag course.image.url, class: 'img-fluid' %>
             <% else %>
@@ -20,6 +20,7 @@
             <div class="col-10 offset-1 text-center">
               <br />
               <h5><%= course.description %></h5>
+              <br />
             </div>
         </div>
       </div>
