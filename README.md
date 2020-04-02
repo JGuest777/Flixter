@@ -4,11 +4,12 @@ A two-sided, video-streaming marketplace platform that features credit card paym
 
 <img src="images/index.PNG">
 
+
+
+## Authentication/eCommerce
+
 <img src="images/courses.PNG" width="400"> <img src="images/payment.PNG" width="400">
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Deployment
 
