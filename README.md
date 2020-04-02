@@ -4,12 +4,13 @@ A two-sided, video-streaming marketplace platform that features credit card paym
 
 <img src="images/index.PNG">
 
+## Courses & Lessons:
 
+<img src="images/courses.PNG" width="432"> <img src="images/lessons.PNG" width="432">
 
 ## Authentication/eCommerce
 
-<img src="images/courses.PNG" width="400"> <img src="images/payment.PNG" width="400">
-
+<img src="images/auth.PNG" width="432"> <img src="images/payment.PNG" width="432">
 
 ## Deployment
 
