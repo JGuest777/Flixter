@@ -7,7 +7,11 @@
       <%= link_to course.title, course_path(course) %>
     </h3>
     <br />
-    <%= image_tag course.image.to_s, class: 'img-fluid' %>
+       <% if course.image.present? %>
+        <%= image_tag course.image.to_s, class: 'img-fluid' %>
+      <% else %>
+        <%= image_tag 'placeholder.jpg', class: 'img-fluid' %>
+      <% end %>
     <br />
     <br />
     <div class="row">
@@ -43,7 +47,11 @@
         <%= link_to course.title, course_path(course) %>
       </h3>
       <br />
-      <%= image_tag course.image.to_s, class: 'img-fluid' %>
+      <% if course.image.present? %>
+        <%= image_tag course.image.to_s, class: 'img-fluid' %>
+      <% else %>
+        <%= image_tag 'placeholder.jpg', class: 'img-fluid' %>
+      <% end %>
       <br />
       <br />
       <div class="row">
@@ -57,6 +65,8 @@
           <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
         </div>
       </div>
+      <hr class="col-8 offset-2">
+      <br class="clr" />
     <% end %>
 
   <% if current_user.courses.blank? %>
