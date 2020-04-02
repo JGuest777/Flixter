@@ -26,6 +26,11 @@ h6,
 	margin: 0;
 }
 
+b {
+	font-size: large;
+	font-weight: bold;
+}
+
 h1 {
 	color: white;
 	text-shadow: 1px 1px 2px #36f918;
@@ -122,6 +127,10 @@ h3 > a {
 
 .soft-box > h1 {
 	color: black;
+}
+
+.bio {
+	line-height: 1.6;
 }
 
 .img-fluid {
