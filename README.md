@@ -20,6 +20,15 @@ A two-sided, video-streaming marketplace platform that features credit card paym
 
 https://allball-app.herokuapp.com/
 
+## Tech
+
+* [Ruby](https://www.ruby-lang.org/en/documentation/) v: 2.5.3
+* [Rails](https://rubyonrails.org/) - v: 5.2.3
+* [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) - v: 4.0.0.alpha6
+* [jQuery](https://jqueryui.com/download/) - v: jQuery-rails
+* [postgreSQL](https://www.postgresql.org/) - Database
+* [Heroku](https://devcenter.heroku.com/) - Deployment
+
 ## Built With
 
 * [Stripe](https://stripe.com/docs) - Used for eCommerce capability
