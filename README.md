@@ -18,7 +18,8 @@ A two-sided, video-streaming marketplace platform that features credit card paym
 
 ## Deployment
 
-https://allball-app.herokuapp.com/
+* [https://allball-app.herokuapp.com/](https://allball-app.herokuapp.com/)
+
 
 ## Tech
 
