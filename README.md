@@ -1,5 +1,7 @@
 # aLLBALL
 
+[jguest777@gmail.com](mailto:jguest777@gmail.com)
+
 A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.
 
 <img src="images/index.PNG">
