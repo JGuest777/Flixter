@@ -1,10 +1,26 @@
 # aLLBALL
 
-[jguest777@gmail.com](mailto:jguest777@gmail.com)
-
 A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.
 
 <img src="images/index.PNG">
+
+## Database Architecture
+
+Created five tables within a PostgreSQL database (courses, enrollments, lessons, sections & users).
+  > A Course belongs to a User, and has many Sections and Enrollments. <br />
+  > Enrollments belong to both a Course & a User. <br />
+  > Lessons belong to a Section. <br />
+  > Thus a Section belongs to a Course and also has many Lessons. <br />
+  > Users will have many Courses, Enrollments and Enrolled Courses (keep track of courses the user is enrolled in). <br />
+
+## RESTful Routing w/ CRUD actions
+
+  > The ability to Enroll in a course is routed only through a Course. <br />
+  > Created two branches of entry into a Course (Instructor & Student) using a namespace. <br />
+    &nbsp; This allows for two different views of the same Course (edit & read only) privledges. <br />
+      &nbsp;&nbsp; /instructor/courses/1 (edit) <br />
+      &nbsp;&nbsp; /courses/1 (read only) <br />
+  > Both privledges react the same when navigating to Lessons & Sections. <br />
 
 ## Courses/Lessons
 
