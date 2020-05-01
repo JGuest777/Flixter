@@ -26,6 +26,8 @@ Created two branches of entry into a Course (Instructor & Student) using a names
 
 <img src="images/courses.PNG" width="434"> <img src="images/lessons.PNG" width="434">
 
+  > instructor can sort Lessons & Sections with Drag 'n Drop Functionality.
+
 ## Authentication/eCommerce
 
 <img src="images/auth.PNG" width="434"> <img src="images/payment.PNG" width="434">
@@ -49,6 +51,6 @@ Created two branches of entry into a Course (Instructor & Student) using a names
 * [Heroku](https://devcenter.heroku.com/) - Deployment
 
 ## Built With
-
+* [jQuery Sortable](https://jqueryui.com/sortable/) - Drag 'n Drop functionality
 * [Stripe](https://stripe.com/docs) - Used for eCommerce capability
 * [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) - File uploads
