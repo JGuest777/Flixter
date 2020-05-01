@@ -15,11 +15,11 @@ Created five tables within a PostgreSQL database (courses, enrollments, lessons,
 
 ## RESTful Routing w/ CRUD actions
 
-  > The ability to Enroll in a course is routed only through a Course. <br />
-  > Created two branches of entry into a Course (Instructor & Student) using a namespace. <br />
-    &nbsp; This allows for two different views of the same Course (edit & read only) privledges. <br />
+Created two branches of entry into a Course (Instructor & Student) using a namespace. <br />
+  > This allows for two different views of the same Course (edit & read only) privledges. <br />
       &nbsp;&nbsp; /instructor/courses/1 (edit) <br />
       &nbsp;&nbsp; /courses/1 (read only) <br />
+  > The ability to Enroll in a course is routed only through a Course. <br />
   > Both privledges react the same when navigating to Lessons & Sections. <br />
 
 ## Courses/Lessons
